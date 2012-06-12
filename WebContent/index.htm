@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>China Mobile Browser Identification</title>
+<script type="text/javascript" src="cmbi.js"></script>
+
+</head>
+<body>
+    Is Mobile ? <div id='mobile'>false</div>
+    <br/><br/>
+    QQ Browser:<div id='qq'>false</div>
+    360 Browser:<div id='360'>false</div>
+    UC Browser:<div id='uc'>false</div>
+    
+    <script type="text/javascript">
+        cmbi.init();
+        alert(cmbi.isMobile);
+        alert(cmbi.isQQ);
+        alert(cmbi.is360);
+        alert(cmbi.isUC);
+        
+        
+        if(cmbi.isMobile){
+            document.getElementById('mobile').innerHTML='true';
+        }
+        
+        if(cmbi.isQQ){
+            document.getElementById('qq').innerHTML='true';
+        }else if(cmbi.is360){
+            document.getElementById('360').innerHTML='true';
+        }else if(cmbi.isUC){
+            document.getElementById('uc').innerHTML='true';
+        }
+    </script>
+</body>
+</html>

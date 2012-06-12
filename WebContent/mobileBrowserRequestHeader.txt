@@ -1,26 +1,3 @@
-china-mobile-browser-identification
-===================================
-
-Identify china mobile browser with javascript.
-
-How to use ?
-You can view WebContent/index.htm or:
-
-add code to your html page
-<script type="text/javascript" src="cmbi.js"></script>
-<script type="text/javascript">
-    cmbi.init();
-</script>
-
-then:
-You can use javascript code to Identify browser:
-cmbi.isQQ    // is QQ Browser ?
-cmbi.is360    // is 360 Browser ?
-cmbi.isUC    // is UC Browser ?
-
-
-
-
 360
 ======================================================================
 host : 192.168.1.243
